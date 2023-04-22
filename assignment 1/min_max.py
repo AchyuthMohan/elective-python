@@ -1,0 +1,7 @@
+n1=int(input("Enter first: "))
+n2=int(input("Enter second: "))
+n3=int(input("Enter third: "))
+minimum_value=min(n1,n2,n3)
+maximum_value=max(n1,n2,n3)
+print("Minimum: ",minimum_value)
+print("Maximum: ",maximum_value)

@@ -1,0 +1,13 @@
+import turtle
+turtle.setup(400, 400)
+turtle.speed(2)
+turtle.penup()
+turtle.goto(-100, -100)
+turtle.pendown()
+turtle.goto(-50, 100)
+turtle.goto(0, -100)
+turtle.penup()
+turtle.goto(-75, 0)
+turtle.pendown()
+turtle.forward(50)
+turtle.done()
