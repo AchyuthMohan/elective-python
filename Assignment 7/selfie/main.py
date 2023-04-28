@@ -1,5 +1,5 @@
 from images import Image
-filename = "achyut.gif"
+filename = "abhishek.gif"
 image = Image(filename)
 threshold = 128
 for x in range(image.getWidth()):
