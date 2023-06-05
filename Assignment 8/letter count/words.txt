@@ -1,0 +1,2 @@
+Write a Python code segment that opens a file for input and prints
+the number of four-letter words in the file.
