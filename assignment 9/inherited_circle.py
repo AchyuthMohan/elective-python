@@ -1,17 +1,18 @@
-import math
 class Circle:
-    def __init__(self,radius):
-        self.radius=radius
+    def __init__(self, radius):
+        self.radius = radius
 
     def area(self):
-        return self.area*self.area
+        return 3.14159 * self.radius**2
 
-class Circle1(Circle):
-    def circum(self):
-        return 2*math.pi*self.radius
-    
-c=Circle1(23)
-print("Area of circle: ",c.area())
-print("Circumfference of circle: ",c.circum())
+    def __gt__(self, other):
+        return self.area() > other.area()
 
+C1 = Circle(5)
+C2 = Circle(3)
+
+if C1 > C2:
+    print("Area of C1 is greater than C2")
+else:
+    print("Area of C2 is greater than or equal to C1")
 
