@@ -1,13 +1,14 @@
 import turtle
-turtle.setup(400, 400)
-turtle.speed(2)
+coords=[(-100,-100),(0,0),(100,-100)]
+line_cords=[(-50,-50),(50,-50)]
+turtle.setup(400,400)
 turtle.penup()
-turtle.goto(-100, -100)
+turtle.goto(coords[0])
 turtle.pendown()
-turtle.goto(-50, 100)
-turtle.goto(0, -100)
+for i in coords[1:]:
+    turtle.goto(i)
 turtle.penup()
-turtle.goto(-75, 0)
+turtle.goto(line_cords[0])
 turtle.pendown()
-turtle.forward(50)
+turtle.goto(line_cords[1])
 turtle.done()
