@@ -1,6 +1,6 @@
 import turtle
-t=turtle.Turtle()
+turtle.setup(400,400)
 for i in range(5):
-    t.forward(100)
-    t.right(144)
+    turtle.forward(100)
+    turtle.right(144)
 turtle.done()

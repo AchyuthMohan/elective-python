@@ -1,0 +1,10 @@
+import numpy as np
+A = np.array([[1, 2, 3], [2, 3, 4], [4, 45, 6]])
+print(A)
+A=np.vstack((A,np.array([6,7,8])))
+print(A)
+A=np.hstack((A,np.array([[5],[6],[7],[8]])))
+print(A)
+min_in_each=np.min(A,axis=1)
+sum_in_each_row=np.sum(A,axis=1)
+print(sum_in_each_row)
