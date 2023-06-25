@@ -1,4 +1,9 @@
-,Name,Age
-0,Lekshmi,22
-1,Achyuth,21
-2,Abhishek,21
+rno,name,m1,m2,m3
+1,Abhishek,30,30,40
+2,Achyuth,30,40,45
+3,Sanosh,45,50,45
+4,Adithya,34,45,46
+5,Harikrishna,34,12,35
+6,Athul,34,45,50
+7,Nandu,34,12,23
+8,Kartha,34,12,34
