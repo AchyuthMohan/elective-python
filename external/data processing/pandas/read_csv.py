@@ -15,4 +15,7 @@ print(people_above_avg_marks)
 # print("Topper data: ")
 # print(student_with_max_mark)
 # print("Details with cgpa: ")
-# print(df)
+
+print(df)
+
+
