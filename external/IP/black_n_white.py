@@ -1,16 +1,6 @@
-from images import Image
-filename = "test.gif"
-image = Image(filename)
-threshold =128
-print("Width: ",image.getWidth())
-print("Height: ",image.getHeight())
-for i in range(image.getWidth()):
-    for j in range(image.getHeight()):
-        r, g, b = image.getPixel(i, j)
-        average = (r+g+b)//3
-        if average >= threshold:
-            image.setPixel(i, j, (255, 255, 255))
-        else:
-            image.setPixel(i, j, (0, 0, 0))
-image.save('bw.gif')
-image.draw()
+from PIL import Image
+image=Image.open('test.gif')
+gs=image.convert('L')
+# bw=gs.convert('1')
+bw=gs.point(lambda pixel:0 if pixel<128 else 255 ,'1')
+bw.show()
